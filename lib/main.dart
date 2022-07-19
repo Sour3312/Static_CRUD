@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:crud_firebase/login.dart';
+import 'package:crud_firebase/spalsh.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -24,10 +25,7 @@ class _HomesScreenState extends State<HomesScreen> {
     return MaterialApp(
       home: Material(
         child: Scaffold(
-          appBar: AppBar(
-            title: Text("CRUD with srv"),
-          ),
-          body: LoginPage(),
+          body: MyHomePage(),
         ),
       ),
     );

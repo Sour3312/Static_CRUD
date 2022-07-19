@@ -68,36 +68,41 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(88.0),
-        child: ListView(
-          children: [
-            RaisedButton(
-              onPressed: () {
-                AddUser();
-              },
-              child: Text("Add User"),
-            ),
-            RaisedButton(
-              onPressed: () {
-                ReadUser();
-              },
-              child: Text("Read User"),
-            ),
-            RaisedButton(
-              onPressed: () {
-                UpdateUser();
-              },
-              child: Text("Update User"),
-            ),
-            RaisedButton(
-              onPressed: () {
-                DeleteUser();
-              },
-              child: Text("Delete User"),
-            ),
-          ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Crud with srv"),
+      ),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(88.0),
+          child: ListView(
+            children: [
+              RaisedButton(
+                onPressed: () {
+                  AddUser();
+                },
+                child: Text("Add User"),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  ReadUser();
+                },
+                child: Text("Read User"),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  UpdateUser();
+                },
+                child: Text("Update User"),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  DeleteUser();
+                },
+                child: Text("Delete User"),
+              ),
+            ],
+          ),
         ),
       ),
     );
